@@ -1,0 +1,18 @@
+/* index.css
+   ------------------------------------------------------------------
+   These three lines inject Tailwind's base styles, component
+   classes, and utility classes into our CSS bundle. Everything else
+   in the app is styled using Tailwind utility classes directly in
+   JSX (e.g. className="flex items-center gap-2").
+   ------------------------------------------------------------------ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* A couple of small custom helpers used in a few places */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
