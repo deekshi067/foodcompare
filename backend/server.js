@@ -32,7 +32,10 @@ const app = express();
 //    to make requests to this API.
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://deekshithareddyfoodcompare.netlify.app"
+    ],
     credentials: true,
   })
 );
